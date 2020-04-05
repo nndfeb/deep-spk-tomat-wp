@@ -1,0 +1,427 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+
+}
+
+body {
+  /* background-image: url(http://localhost/tomat/assets/imgs/bg.jpg); */
+  background-color: rgb(195, 255, 180);
+}
+
+
+/* css Table */
+.main-table {
+  font-family: "Arial, Helvetica, sans-serif";
+  font-size: 9pt;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff;
+
+}
+
+.main-table thead tr th {
+  text-align: center;
+}
+
+.main-table th {
+  border: 1px solid rgb(224, 224, 224);
+  padding: 6px;
+  /* font-size: 11pt; */
+
+}
+
+
+.main-table td {
+  border: 1px solid #f1f6fb;
+  padding: 8px;
+  text-align: center;
+}
+
+.main-table tr:nth-child(even) {
+  background-color: red;
+}
+
+.main-table tr:hover {
+  background-color: rgb(255, 248, 232);
+
+}
+
+.main-table th {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: left;
+  background-color: #eaeaea;
+  color: grey;
+}
+
+*/
+/* Penutup css table */
+
+/* CSS Untuk Form Input dan Edit */
+.container {
+  width: 60%;
+  height: 100%;
+  margin-top: 0px;
+  margin: auto;
+  background-color: rgb(218, 255, 209);
+  z-index: 2;
+}
+
+.control-group {
+  margin-bottom: .5em;
+}
+
+.control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0;
+}
+
+/* NAV BAR CSS */
+
+.navbar {
+  /* background-color: #161616; */
+  background-color: #2b7e17;
+  padding: 20px 10px;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  /* padding: 6px; */
+  padding: 0px;
+  display: block;
+
+}
+
+a.active {
+  background-color: rgb(255, 60, 0);
+  color: white;
+}
+
+a.finish {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navbar a {
+  float: left;
+  /* color: rgb(105, 105, 105); */
+  color: #eaeaea;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 11pt;
+  line-height: 22px;
+  /* border-radius: 4px; */
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  /* font-size: 16px;   */
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  color: #eaeaea;
+  padding: 14px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(39, 102, 23);
+  color: #eaeaea;
+
+}
+
+.dropdown-content {
+  display: none;
+  border-radius: 5px;
+  position: absolute;
+  background-color: rgba(255, 60, 0, 0.753);
+  padding: 1px;
+  min-width: 160px;
+  box-shadow: rgba(255, 60, 0, 0.788);
+
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #eaeaea;
+  /* padding: 5px 5px; */
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin: 0px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(255, 60, 0);
+  margin: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* FORM LOGIN */
+.main-form {
+  /* background-color: red; */
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 300px;
+  border: 1px solid lightgray;
+  /*jika ingin melihat posisi div anda lebih jelas */
+  background-color: rgba(255, 255, 255, 0.774);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 45, 248, 0.062), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-form {
+  text-align: center;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  padding-bottom: 0px;
+
+}
+
+
+/* FORM POPUP */
+/* Full-width input fields */
+/* input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+} */
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 12pt;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgb(168, 241, 149);
+  color: white;
+  padding: 9px 18px;
+  margin: 0px 0px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 11pt;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: rgb(195, 255, 180);
+  ;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container1 {
+  padding: 30px;
+  padding: 50px;
+
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  /* border: 1px solid #888; */
+  border-radius: 2px;
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: salmon;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.form-main {
+  border-color: 1px solig red;
+  /* position:static; */
+  /* padding-top: 50px; */
+  /* border-top:300px; */
+}
+
+
+
+/* css Table */
+.main-table {
+  font-family: "Arial, Helvetica, sans-serif";
+  font-size: 11pt;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+.main-table thead tr th {
+  text-align: center;
+}
+
+.main-table th {
+  border: 1px solid rgb(224, 224, 224);
+  padding: 6px;
+  /* font-size: 11pt; */
+
+}
+
+.main-table td {
+  border: 1px solid #ddd;
+  padding: 3px;
+  text-align: center;
+}
+
+.main-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.main-table tr:hover {
+  background-color: rgb(255, 248, 232);
+
+}
+
+.main-table th {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: left;
+  background-color: #e6e6e6;
+  color: rgb(56, 56, 56);
+}
