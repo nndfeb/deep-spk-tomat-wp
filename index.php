@@ -33,6 +33,18 @@
     }
 </style>
 
+
+<?php
+require_once 'init.php';
+
+if (isset($_POST['login'])) {
+    echo "hallo";
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $login->login($email, $password);
+}
+?>
+
 <body>
     <div class="content">
         <div class="content-text">
@@ -48,7 +60,7 @@
             <h3>KHARISMA KARAWANG</h3>
             <h3>TAHUN 2020</h3>
             <br>
-            <button class="btn btn-next" onclick="window.location.href = 'page/login.php';">Lanjut</button>
+            <button class="btn btn-next" onclick="window.location.href = 'login.php';">Lanjut</button>
         </div>
     </div>
 </body>

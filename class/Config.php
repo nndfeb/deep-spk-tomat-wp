@@ -6,7 +6,6 @@ class Config
     private $_username = "root";
     private $_password = "";
     private $_db = "spk_tomat";
-
     protected $conn;
 
     public function __construct()

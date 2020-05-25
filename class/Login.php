@@ -1,25 +1,18 @@
 <?php
 include_once 'Config.php';
+
 class Login extends Config
 {
 
-    public $id;
-    public $table = "tb_pengguna";
-    public $pengguna;
-    public $password;
-
-
+    private $table = "tb_pengguna";
     public function __construct()
     {
         parent::__construct();
     }
-
     public function login($email, $password)
     {
         $password_hash = md5($password);
         $data = $this->auth($email, $password_hash);
-        // var_dump($data);
-        // die;
 
         if ($data == TRUE) {
             session_start();
@@ -28,19 +21,17 @@ class Login extends Config
             $_SESSION['email'] = $data['email'];
             $_SESSION['id_akses'] = $data['id_akses'];
             $_SESSION['akses'] = $data['akses'];
-            $_SESSION['password'] = $data['password'];
-
 
             // pengarahan halaman sesuai hak akses
             if ($_SESSION['id_akses'] == '1') {
-                header('Location: index.php');
+                header('Location: pages/index.php');
             } else if ($_SESSION['id_akses'] == '2') {
-                header('Location: index.php');
+                header('Location: pages/index.php');
             } else {
                 die;
             }
         } else {
-            echo "SALAH";
+            echo '<script type="text/javascript">alert("Gagal Login");</script>';
         }
     }
 

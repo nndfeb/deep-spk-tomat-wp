@@ -39,8 +39,6 @@ class Wp extends Config
 
     function pangkat($matriks, $bobot, $tipe)
     {
-        // var_dump($matriks, $bobot, $tipe);
-        // die;
         foreach ($matriks as $key1 => $val1) {
             foreach ($val1 as $key2 => $val2) {
                 $y = $key2;
