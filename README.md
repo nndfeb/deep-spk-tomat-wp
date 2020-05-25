@@ -1,2 +1,3 @@
-# deep-spk-tomat-wp
-project mentah belum jadi 
+#SPK WP menggunakan PHP Native
+
+penerapan konsep OOP (Object Oriented Programming)
